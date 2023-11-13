@@ -8,6 +8,7 @@ body {
   gap: 1px;
   grid-template-columns: repeat(10, 40px); 
   position: absolute;
+  left: 50%;
 }
 
 /*Unrevealed cells*/
