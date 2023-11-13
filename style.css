@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+}
+
+/*The game board*/
+#board {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(10, 40px); 
+}
+
+/*Unrevealed cells*/
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+/*Different cell states*/
+.cell.revealed {
+  background-color: #ddd;
+}
+
+.cell.mine {
+  background-color: #f00;
+  color: #fff;
+}
+
+.cell.mineClicked {
+  background-color: #000;
+}
+
+.cell.flagged {
+  background-color: #0f0;
+}
+
+.cell.badFlag {
+  background-color: #ff0;
+}
