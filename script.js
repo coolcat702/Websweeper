@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				revealAdjacentCells(row, col);
 			}
 
-			if (revealedCells === boardSize * boardSize - mines) {
+			if (revealedCells === boardSize ** 2 - mines) {
 				alert('Oi congrats bruv ya won!');
 				const allCells = document.querySelectorAll('.cell');
 
