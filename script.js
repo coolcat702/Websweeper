@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 
 			if (revealedCells === boardSize * boardSize - mines) {
-				alert('You win!');
+				alert('Oi congrats bruv ya won!');
 				const allCells = document.querySelectorAll('.cell');
 
 				allCells.forEach((cell) => {
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 			});
 		});
-		alert('Oi bruv you lost innit');
+		alert('Oi bruv you lost innit?');
 		setTimeout(resetGame, 1000); // Reset the game after 1 second
 	}
 
